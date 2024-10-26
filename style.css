@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    flex-direction: column;
+    width: 100%;
+    /* background: linear-gradient(90deg,#03173e 50%,#0b2545 50%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+    font-family: "Amazon Ember", sans-serif;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #22223b;
+}
+
+.container .calculator {
+    width: 300px;
+    height: 450px;
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #4a4e69;
+}
+
+.container .calculator .input {
+    background-color: #9a8c98;
+    border: none;
+    height: 60px;
+    width: 90%;
+    outline: none;
+    border-radius: 10px;
+    font-size: 50px;
+    color: #f2e9e4;
+    padding: 10px;
+    display: block;
+    text-align: right;
+}
+
+::placeholder {
+    color: #f2e9e4;
+}
+
+.container .calculator div button {
+    color: #4a4e69;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #c9ada7;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin: 7px;
+}
+
+.container .calculator div .operator {
+    background-color: #9a8c98;
+    color: #f2e9e4;
+}
+
+.container .calculator div button:hover {
+    background-color: #4a4e69;
+    color: #f2e9e4;
+}
+
+@media(max-width:767px) {
+    .container .calculator{
+        height: 550px;
+        width: 350px;
+    }
+
+    .container h1{
+        color: rgba(165, 42, 42, 0.795);
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
