@@ -86,7 +86,7 @@ body {
 @media(max-width:767px) {
     .container .calculator{
         height: 550px;
-        width: 320px;
+        width: 300px;
     }
 
     .container h1{
